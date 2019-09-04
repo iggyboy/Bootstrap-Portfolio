@@ -5,7 +5,16 @@ body {
     line-height: 34px;
     color: #777777;
     background: url("assets/concrete_seamless.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
   }
+
+  * {
+    box-sizing: border-box;
+  }
+  
 
   .container {
       border: 1px solid #dddddd;
@@ -18,16 +27,21 @@ body {
 
   .title {
     border-bottom: 3px solid #dddddd;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    color: #4aaaa5;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    font-weight: bold;
   }
 
   .img-thumbnail {
     border: 1px solid #dddddd;
+    overflow: hidden;
   }
 
   .work {
     width: 200px;
     margin: 20px 0 25px;
-    overflow: auto;
   }
 
   .work:nth-child(even) {
@@ -43,7 +57,7 @@ body {
   .work h3 {
     position: absolute;
     bottom: 20px;
-    width: 100%;
+    width: 90%;
     padding: 15px;
     margin-bottom: 0;
     font-weight: 300;
@@ -53,3 +67,19 @@ body {
     background: #4aaaa5;
     border-bottom: 0;
   }
+
+  footer {
+    padding: 30px 0;
+    font-size: 12px;
+    color: #cccccc;
+    text-align: center;
+    background: #666666;
+    border-top: 8px solid #4aaaa5;
+    height: 30px;
+    margin-top: 50px;
+    width: 100%;
+    bottom: 0;
+    clear: both;
+    display: block;
+  }
+
